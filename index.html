@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="./scripts/script.js" type="module"></script>
+    
+    <title>Guess the Pokemon!</title>
+</head>
+
+<body>
+    <div class="content">
+        <section class="top-row"> 
+            <header>
+                <h1>new pokemon who dis?</h1>
+            </header>
+
+            <section class="score">
+                <h2>Score: &nbsp</h2>
+                <h2 id="game-score">0</h2>
+            </section>
+        </section>
+
+        <section class="pokemon-img">
+            <img id="img" src="./assets/question.png" alt="mysterious pokemon">
+            <!-- <p id="pokemon-name">???</p> -->
+        </section>
+
+        <section class="choices">
+            <section class="choices__list">
+                <div class="choices__item" id="a">a</div>
+                <div class="choices__item" id="b">b</div>
+                <div class="choices__item" id="c">c</div>
+                <div class="choices__item" id="d">d</div>
+                </section>
+            
+        </section>
+    </div>
+</body>
+</html>

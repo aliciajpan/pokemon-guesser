@@ -33,6 +33,7 @@ async function fetchPokemon() {
         name: pokemon.data.name,
         front: pokemon.data.sprites.front_default,
         back: pokemon.data.sprites.back_default,
+        sound: pokemon.data.cries.latest,
       });
     }
 
@@ -59,6 +60,9 @@ function checkAnswer(event) {
     setScore(++score);;
   }
 
+  let snd = new Audio(currentPokemon.sound);
+  snd.volume = 0.1;
+  snd.play();
   revealPicture();
 
   // const label = document.getElementById("pokemon-name");

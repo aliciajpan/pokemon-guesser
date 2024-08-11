@@ -2,6 +2,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     font-weight: bold;
+    background-color: lightgreen;
+    padding-top: 10rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     h1 {
         font-size: 50px;
@@ -14,14 +20,14 @@ body {
 
 .content {
     background-image: url(./assets/grassbkgd.png);
+    border-radius: 2rem;
     background-size: cover;
     width: 63.75rem;
     height: 35.625rem;
     resize: none;
-    padding: 2rem;
+    padding: 0 4rem 2rem;
     display: flex;
     flex-direction: column;
-    
 }
 
 .top-row {
@@ -33,13 +39,13 @@ body {
 .score {
     display: flex;
     align-items: center;
-    margin-top: -6rem;
 }
 
 .pokemon-img {
     display: flex;
     align-self: flex-end;
-    padding-right: 4rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
 }
 
 #img {
